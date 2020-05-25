@@ -1,17 +1,17 @@
 #ifndef DRIVESELECT_HPP
 #define DRIVESELECT_HPP
 #include <map>
+#include <vector>
 #include <string>
 
 using namespace std;
 
 class DriveSelect {
   private:
-    char lpBuffer[30];
+    vector<string> paths;
   public:
     DriveSelect();
-    void parseBuffer(map<string, string>& drives);
-    string pickDrive(map<string, string>& drives);
+    vector<string> getDrives();
 };
 
 #endif // DRIVESELECT_HPP

@@ -30,6 +30,7 @@ void MainWindow::on_startButton_clicked() {
     //Delete start button
 //    ui->startButton->deleteLater();
     DriveSelect d;
-    map<string, string> drives;
-    d.parseBuffer(drives);
+    QString t = "";
+    t.setNum(d.getDrives().size());
+    ui->startButton->setText(t);
 }

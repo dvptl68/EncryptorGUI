@@ -1,5 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "DriveSelect.hpp"
+#include <map>
+#include <string>
+
+using namespace std;
 
 //Constructor for main window
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow) {
@@ -23,5 +28,8 @@ void MainWindow::on_startButton_clicked() {
     ui->titleLabel->setFont(serifFont);
     ui->titleLabel->setGeometry(8, 0, 200, 45);
     //Delete start button
-    ui->startButton->deleteLater();
+//    ui->startButton->deleteLater();
+    DriveSelect d;
+    map<string, string> drives;
+    d.parseBuffer(drives);
 }

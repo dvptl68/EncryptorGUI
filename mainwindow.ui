@@ -16,115 +16,113 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <layout class="QGridLayout" name="gridLayout_2">
+     <layout class="QGridLayout" name="pageLayout" columnstretch="100,0,310,100">
       <property name="verticalSpacing">
-       <number>40</number>
+       <number>6</number>
       </property>
-      <item row="1" column="1">
-       <widget class="QLabel" name="titleLabel">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="sizeIncrement">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>OCR A Extended</family>
-          <pointsize>80</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-         </font>
-        </property>
-        <property name="text">
-         <string>Encryptor</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
       <item row="2" column="0">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       <widget class="QWidget" name="cont7" native="true"/>
       </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="startButton">
-        <property name="font">
-         <font>
-          <family>Segoe MDL2 Assets</family>
-          <pointsize>25</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Start</string>
-        </property>
-       </widget>
+      <item row="3" column="2">
+       <widget class="QWidget" name="cont11" native="true"/>
       </item>
-      <item row="0" column="1">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
+      <item row="0" column="2">
+       <widget class="QWidget" name="cont2" native="true"/>
       </item>
-      <item row="3" column="1">
-       <spacer name="verticalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
+      <item row="2" column="3">
+       <widget class="QWidget" name="cont9" native="true"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QWidget" name="cont10" native="true"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QWidget" name="cont6" native="true"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QWidget" name="cont4" native="true"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QWidget" name="cont1" native="true"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QWidget" name="cont12" native="true"/>
       </item>
       <item row="2" column="2">
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       <widget class="QWidget" name="cont8" native="true">
+        <widget class="QPushButton" name="startButton">
+         <property name="geometry">
+          <rect>
+           <x>144</x>
+           <y>30</y>
+           <width>300</width>
+           <height>60</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+           <pointsize>25</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Start</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QWidget" name="cont3" native="true"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QWidget" name="cont5" native="true">
+        <widget class="QLabel" name="titleLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>165</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>OCR A Extended</family>
+           <pointsize>80</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Encryptor</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
       </item>
      </layout>
     </item>

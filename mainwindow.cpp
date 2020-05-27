@@ -50,6 +50,9 @@ void MainWindow::on_startButton_clicked() {
   QListWidget *dr = new QListWidget(ui->cont8);
   dr->setGeometry(144, 0, 300, 200);
   dr->show();
+  for (int i = 0; i < (int)drives.size(); i++){
+    dr->addItem(QString::fromStdString(drives[i]));
+  }
 
   //Create and show next push button
   QPushButton *next = new QPushButton(ui->cont12);

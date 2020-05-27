@@ -5,12 +5,14 @@
 #include <map>
 #include <string>
 #include "DriveSelect.hpp"
+#include <QTextStream>
 
 using namespace std;
 struct stat info;
 
 //Constructor for Select class
 DriveSelect::DriveSelect(void){
+  QTextStream out(stdout);
   //Fill vector with possible drive letters
   vector<string> alphabet = {"A", "B", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
   //Iterate through possible drive letters
@@ -20,6 +22,7 @@ DriveSelect::DriveSelect(void){
     char current[3] ={alphabet[i].c_str()[0], ':', '\\'};
     //Check if drive path exists
     if (stat (current, &buffer) == 0){
+      out << "A";
       //Retrieve drive name and add to vector
       char VolumeName[MAX_PATH];
       GetVolumeInformationA((LPCSTR)current, (LPSTR)VolumeName, sizeof(VolumeName), NULL, NULL, NULL, NULL, 0);

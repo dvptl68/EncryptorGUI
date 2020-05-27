@@ -51,7 +51,7 @@ void MainWindow::on_startButton_clicked() {
   dr->setGeometry(144, 0, 300, 200);
   dr->show();
   for (int i = 0; i < (int)drives.size(); i++){
-    dr->addItem(QString::fromStdString(drives[i]));
+    dr->addItem(QString::fromStdString(drives[i].substr(0, 3) + " -> " + drives[i].substr(3)));
   }
 
   //Create and show next push button
@@ -61,7 +61,6 @@ void MainWindow::on_startButton_clicked() {
   font1.kerning();
   next->setFont(font1);
   next->setText("Next");
-  next->show();
 
   //Create and show instruction label
   QLabel *instruct = new QLabel(ui->cont5);
@@ -70,4 +69,6 @@ void MainWindow::on_startButton_clicked() {
   instruct->setText("Select a drive:");
   instruct->move(185, 30);
   instruct->show();
+
+  QObject::connect(dr, &QListWidget::itemSelectionChanged, next, &QPushButton::show);
 }
